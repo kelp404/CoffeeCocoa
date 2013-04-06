@@ -24,6 +24,7 @@ Enjoy It :-)
 
 ##Data Type
 It supports `NSNull`, `NSString`, `NSNumber`, `NSDate`, `NSDictionary` and `NSArray`.  
+
   Objective-C  |  JavaScript  
 :---------:|:---------:
 `NSNull` | `null`
