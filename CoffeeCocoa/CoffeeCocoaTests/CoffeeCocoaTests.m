@@ -60,6 +60,18 @@
     STAssertTrue(executed, nil);
 }
 
+- (void)testCallback
+{
+    CoffeeCocoa *cc = [CoffeeCocoa new];
+    
+    __block BOOL executed = NO;
+    [cc evalCoffeeScript:@"callback true" callback:^(id object) {
+        executed = YES;
+        STAssertEqualObjects(object, @1, nil);
+    }];
+    STAssertTrue(executed, nil);
+}
+
 - (void)testObjectSend
 {
     CoffeeCocoa *cc = [CoffeeCocoa new];
