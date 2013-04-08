@@ -100,4 +100,16 @@
     STAssertEquals(executedTimes, 2UL, nil);
 }
 
+- (void)testError
+{
+    CoffeeCocoa *cc = [CoffeeCocoa new];
+    
+    __block BOOL executed = NO;
+    [cc.cocoa setError:^(id msg) {
+        executed = YES;
+    }];
+    [cc evalCoffeeScript:@"kelp@phate.org()"];
+    STAssertTrue(executed, nil);
+}
+
 @end

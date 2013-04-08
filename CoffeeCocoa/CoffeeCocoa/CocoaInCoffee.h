@@ -22,14 +22,13 @@
 
 #pragma mark - Methods in JavaScript
 /**
- Cocoa.print(msg) handler.
+ cocoa.print(msg) handler.
  */
 @property (strong, nonatomic) __block void (^print)(id msg);
-- (void)print:(id)msg;
 /**
- Cocoa.handler(tag, msg) handler.
+ cocoa.error(msg) handler.
  */
-- (id)handler:(NSNumber *)tag msg:(id)msg;
+@property (strong, nonatomic) __block void (^error)(id msg);
 
 
 #pragma mark - Handler

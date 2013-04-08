@@ -2,6 +2,7 @@
 $ = jQuery
 window.cocoa = window.cocoa || {}       # cocoa interface in script
 window.cocoa_ = window.cocoa_ || {}     # ojective-c objects in script
+window.onerror = (msg) -> cocoa_.error msg
 
 $.extend window.cocoa,
     _type_: (source) ->
@@ -37,4 +38,5 @@ $.extend window.cocoa,
 
     # objective-c methods mapping
     print: (msg) -> cocoa_.print msg
+    error: (msg) -> cocoa_.error msg
     handler: (tag, msg) -> @_json_parse_ cocoa_.handler(tag, msg)

@@ -30,6 +30,7 @@ CC_BURST_LINK NSString *jsonFromNSObject(id object);
 
 @synthesize webView = _webView;
 @synthesize print = _print;
+@synthesize error = _error;
 
 
 #pragma mark - Init
@@ -53,9 +54,13 @@ CC_BURST_LINK NSString *jsonFromNSObject(id object);
 
 
 #pragma mark - Properties
-- (void)setPrint:(void (^)(id))print
+- (void)setPrint:(void (^)(id msg))print
 {
     _print = print;
+}
+- (void)setError:(void (^)(id msg))error
+{
+    _error = error;
 }
 
 
@@ -66,6 +71,8 @@ CC_BURST_LINK NSString *jsonFromNSObject(id object);
     
     if (selector == @selector(print:))
         name = @"print";
+    if (selector == @selector(error:))
+        name = @"error";
     if (selector == @selector(handler:msg:))
         name = @"handler";
     
@@ -75,6 +82,8 @@ CC_BURST_LINK NSString *jsonFromNSObject(id object);
 {
     if (selector == @selector(print:))
         return NO;
+    if (selector == @selector(error:))
+        return NO;
     if (selector == @selector(handler:msg:))
         return NO;
     
@@ -83,12 +92,25 @@ CC_BURST_LINK NSString *jsonFromNSObject(id object);
 
 
 #pragma mark - JavaScript functions
+/**
+ cocoa.print(msg) handler.
+ */
 - (void)print:(id)msg
 {
-    if (_print) {
+    if (_print)
         _print([self nsobjectFromWebObject:msg]);
-    }
 }
+/**
+ cocoa.error(msg) handler.
+ */
+- (void)error:(id)msg
+{
+    if (_error)
+        _error([self nsobjectFromWebObject:msg]);
+}
+/**
+ cocoa.handler(tag, msg) handler.
+ */
 - (id)handler:(NSNumber *)tag msg:(id)msg
 {
     __block id (^handler)(id) = [_handlerPool objectForKey:tag];
@@ -238,7 +260,7 @@ NSString *cleanupString(NSString *source)
             NSUInteger length = [[webObject valueForKey:@"length"] unsignedIntegerValue];
             NSMutableArray *result = [[NSMutableArray alloc] initWithCapacity:length];
             for (NSUInteger index = 0; index < length; index++) {
-                [result addObject:[webObject webScriptValueAtIndex:(unsigned)index]];
+                [result addObject:[self nsobjectFromWebObject:[webObject webScriptValueAtIndex:(unsigned)index]]];
             }
             return result;
         }
