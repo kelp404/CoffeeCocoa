@@ -39,6 +39,7 @@ It supports `NSNull`, `NSString`, `NSNumber`, `NSDate`, `NSDictionary` and `NSAr
 ##Methods
 ###Eval
 ```objective-c
+#pragma mark - Eval CoffeeScript
 /**
  Eval CoffeeScript.
  @param coffeeScript: CoffeeScript
@@ -52,6 +53,24 @@ It supports `NSNull`, `NSString`, `NSNumber`, `NSDate`, `NSDictionary` and `NSAr
  @param handler: callback handler
  */
 - (void)evalCoffeeScript:(NSString *)coffeeScript callback:(void (^)(id object))handler;
+
+
+#pragma mark - Eval JavaScript
+/**
+ Eval JavaScript.
+ The JavaScript will be eval in the function, like this `(function(){.........}).call(this);`.
+ @param javaScript: JavaScript
+ */
+- (void)evalJavaScript:(NSString *)javaScript;
+
+/**
+ Eval JavaScript with callback function.
+ You could use `callback(object)` in JavaScript to call Objective-C code.
+ The JavaScript will be eval in the function, like this `(function(){.........}).call(this);`.
+ @param javaScript: JavaScript
+ @param handler: callback handler
+ */
+- (void)evalJavaScript:(NSString *)javaScript callback:(void (^)(id object))handler;
 ```
 
 
@@ -103,5 +122,3 @@ NSDictionary *obj = @{@"name": @"Kelp",
 
 ##Attention
 Your should copy `/CoffeeCocoa/CoffeeCocoa/CoffeeScript` and `/CoffeeCocoa/CoffeeCocoa/JavaScript` into your bundle.  
-
-

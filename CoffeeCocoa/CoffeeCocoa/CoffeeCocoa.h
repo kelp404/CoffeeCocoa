@@ -31,6 +31,22 @@
  */
 - (void)evalCoffeeScript:(NSString *)coffeeScript callback:(void (^)(id object))handler;
 
+#pragma mark - Eval JavaScript
+/**
+ Eval JavaScript.
+ The JavaScript will be eval in the function, like this `(function(){.........}).call(this);`.
+ @param javaScript: JavaScript
+ */
+- (void)evalJavaScript:(NSString *)javaScript;
+/**
+ Eval JavaScript with callback function.
+ You could use `callback(object)` in JavaScript to call Objective-C code.
+ The JavaScript will be eval in the function, like this `(function(){.........}).call(this);`.
+ @param javaScript: JavaScript
+ @param handler: callback handler
+ */
+- (void)evalJavaScript:(NSString *)javaScript callback:(void (^)(id object))handler;
+
 #pragma mark - Extend
 /**
  Extend a function in JavaScript object;

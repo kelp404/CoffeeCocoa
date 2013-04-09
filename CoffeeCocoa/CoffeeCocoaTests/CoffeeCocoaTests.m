@@ -112,4 +112,21 @@
     STAssertTrue(executed, nil);
 }
 
+- (void)testJavaScript
+{
+    CoffeeCocoa *cc = [CoffeeCocoa new];
+    
+    __block NSUInteger executedTimes = 0;
+    [cc.cocoa setPrint:^(id msg) {
+        executedTimes++;
+        STAssertEqualObjects(msg, @"test javascript", nil);
+    }];
+    [cc evalJavaScript:@"cocoa.print('test javascript');"];
+    [cc evalJavaScript:@"callback();" callback:^(id object) {
+        executedTimes++;
+        STAssertEqualObjects(object, [NSNull null], nil);
+    }];
+    STAssertEquals(executedTimes, 2UL, nil);
+}
+
 @end

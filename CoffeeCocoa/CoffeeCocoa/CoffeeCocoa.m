@@ -67,6 +67,28 @@
 }
 
 
+#pragma mark - Eval JavaScript
+- (void)evalJavaScript:(NSString *)javaScript
+{
+    NSString *script = [NSString stringWithFormat:@"(function() {%@}).call(this);", javaScript];
+    [_webView stringByEvaluatingJavaScriptFromString:script];
+}
+- (void)evalJavaScript:(NSString *)javaScript callback:(void (^)(id object))handler
+{
+    NSNumber *handlerId = [_cocoa addHandler:^id(id object) {
+        if (handler)
+            handler(object);
+        return nil;
+    }];
+    NSString *callbackScript = [NSString stringWithFormat:@"var callback = function(msg) {cocoa.handler(%@, msg);}", handlerId];
+    NSString *script = [NSString stringWithFormat:@"(function() {\n"
+                        "%@\n"
+                        "%@\n"
+                        "}).call(this);", callbackScript, javaScript];
+    [_webView stringByEvaluatingJavaScriptFromString:script];
+}
+
+
 #pragma mark - Extend
 - (NSNumber *)extendFunction:(NSString *)functionName inObject:(NSString *)objectName handler:(id (^)(id object))handler;
 {
