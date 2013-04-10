@@ -37,9 +37,8 @@ It supports `NSNull`, `NSString`, `NSNumber`, `NSDate`, `NSDictionary` and `NSAr
 
 
 ##Methods
-###Eval
+###Eval CoffeeScript
 ```objective-c
-#pragma mark - Eval CoffeeScript
 /**
  Eval CoffeeScript.
  @param coffeeScript: CoffeeScript
@@ -53,9 +52,11 @@ It supports `NSNull`, `NSString`, `NSNumber`, `NSDate`, `NSDictionary` and `NSAr
  @param handler: callback handler
  */
 - (void)evalCoffeeScript:(NSString *)coffeeScript callback:(void (^)(id object))handler;
+```
 
 
-#pragma mark - Eval JavaScript
+###Eval JavaScript
+```objective-c
 /**
  Eval JavaScript.
  The JavaScript will be eval in the function, like this `(function(){.........}).call(this);`.
