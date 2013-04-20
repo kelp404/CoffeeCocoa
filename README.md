@@ -9,7 +9,7 @@ Run **<a href="http://coffeescript.org/" target="_blank">CoffeeScript</a>** in *
 This project use WebKit to run JavaScript not V8. And this version just supports OS X, it may be supported iOS in future.  
 
 
-This idea is from NyaruDB-Control which is the <a href="https://github.com/kelp404/NyaruDB" target="_blank">NyaruDB</a> management tool. I want to build a tool to execute NyaruDB query syntax.  
+This idea is from <a href="https://github.com/kelp404/NyaruDB-Control" target="_blank">NyaruDB-Control</a> which is the <a href="https://github.com/kelp404/NyaruDB" target="_blank">NyaruDB</a> management tool. I want to build a tool to execute NyaruDB query syntax.  
 But Objective-C need to be compiled. It doesn't like Python, Ruby or JavaScript.  
 This project is for doing that.  
 Enjoy It :-)  
