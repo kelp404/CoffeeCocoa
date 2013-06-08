@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		21008BEF1722BF9000941186 /* jquery-2.0.0.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 21008BED1722BF6200941186 /* jquery-2.0.0.min.js */; };
 		212969A6170FD2F1006FE094 /* CocoaInCoffee.h in Headers */ = {isa = PBXBuildFile; fileRef = 212969A4170FD2F1006FE094 /* CocoaInCoffee.h */; };
 		212969A7170FD2F1006FE094 /* CocoaInCoffee.m in Sources */ = {isa = PBXBuildFile; fileRef = 212969A5170FD2F1006FE094 /* CocoaInCoffee.m */; };
-		212969A8170FDC17006FE094 /* cocoa.coffee in Resources */ = {isa = PBXBuildFile; fileRef = 2129699F170FD13E006FE094 /* cocoa.coffee */; };
+		218C40CA176366CC009EE3B0 /* cocoa.coffee in Resources */ = {isa = PBXBuildFile; fileRef = 218C40C6176366CC009EE3B0 /* cocoa.coffee */; };
+		218C40CF17636713009EE3B0 /* coffee-script-1.6.2.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 218C40C8176366CC009EE3B0 /* coffee-script-1.6.2.min.js */; };
+		218C40D017636713009EE3B0 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 218C40C9176366CC009EE3B0 /* jquery.min.js */; };
 		21F6B328170EB2CD00808B05 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F6B327170EB2CD00808B05 /* Cocoa.framework */; };
 		21F6B332170EB2CD00808B05 /* CoffeeCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F6B331170EB2CD00808B05 /* CoffeeCocoa.m */; };
 		21F6B33A170EB2CD00808B05 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F6B339170EB2CD00808B05 /* SenTestingKit.framework */; };
@@ -20,7 +21,6 @@
 		21F6B347170EB2CD00808B05 /* CoffeeCocoaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F6B346170EB2CD00808B05 /* CoffeeCocoaTests.m */; };
 		21F6B351170EB3F300808B05 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F6B350170EB3F300808B05 /* WebKit.framework */; };
 		21F6B35B170EB8E100808B05 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F6B350170EB3F300808B05 /* WebKit.framework */; };
-		21F6B363170EBA2700808B05 /* coffee-script-1.6.2.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 21F6B357170EB7BD00808B05 /* coffee-script-1.6.2.min.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +34,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		21008BED1722BF6200941186 /* jquery-2.0.0.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "jquery-2.0.0.min.js"; path = "JavaScript/jquery-2.0.0.min.js"; sourceTree = "<group>"; };
-		2129699F170FD13E006FE094 /* cocoa.coffee */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cocoa.coffee; sourceTree = "<group>"; };
 		212969A4170FD2F1006FE094 /* CocoaInCoffee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaInCoffee.h; sourceTree = "<group>"; };
 		212969A5170FD2F1006FE094 /* CocoaInCoffee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaInCoffee.m; sourceTree = "<group>"; };
+		218C40C6176366CC009EE3B0 /* cocoa.coffee */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cocoa.coffee; sourceTree = "<group>"; };
+		218C40C8176366CC009EE3B0 /* coffee-script-1.6.2.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "coffee-script-1.6.2.min.js"; sourceTree = "<group>"; };
+		218C40C9176366CC009EE3B0 /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.min.js; sourceTree = "<group>"; };
 		21F6B324170EB2CD00808B05 /* libCoffeeCocoa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCoffeeCocoa.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		21F6B327170EB2CD00808B05 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		21F6B32A170EB2CD00808B05 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -52,7 +53,6 @@
 		21F6B345170EB2CD00808B05 /* CoffeeCocoaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoffeeCocoaTests.h; sourceTree = "<group>"; };
 		21F6B346170EB2CD00808B05 /* CoffeeCocoaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoffeeCocoaTests.m; sourceTree = "<group>"; };
 		21F6B350170EB3F300808B05 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		21F6B357170EB7BD00808B05 /* coffee-script-1.6.2.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "coffee-script-1.6.2.min.js"; path = "JavaScript/coffee-script-1.6.2.min.js"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +79,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2129699E170FD13E006FE094 /* CoffeeScript */ = {
+		218C40C5176366CC009EE3B0 /* CoffeeScript */ = {
 			isa = PBXGroup;
 			children = (
-				2129699F170FD13E006FE094 /* cocoa.coffee */,
+				218C40C6176366CC009EE3B0 /* cocoa.coffee */,
 			);
 			path = CoffeeScript;
+			sourceTree = "<group>";
+		};
+		218C40C7176366CC009EE3B0 /* JavaScript */ = {
+			isa = PBXGroup;
+			children = (
+				218C40C8176366CC009EE3B0 /* coffee-script-1.6.2.min.js */,
+				218C40C9176366CC009EE3B0 /* jquery.min.js */,
+			);
+			path = JavaScript;
 			sourceTree = "<group>";
 		};
 		21F6B31B170EB2CD00808B05 = {
@@ -166,20 +175,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		21F6B352170EB70000808B05 /* JavaScript */ = {
-			isa = PBXGroup;
-			children = (
-				21F6B357170EB7BD00808B05 /* coffee-script-1.6.2.min.js */,
-				21008BED1722BF6200941186 /* jquery-2.0.0.min.js */,
-			);
-			name = JavaScript;
-			sourceTree = "<group>";
-		};
 		21F6B35C170EB8FE00808B05 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2129699E170FD13E006FE094 /* CoffeeScript */,
-				21F6B352170EB70000808B05 /* JavaScript */,
+				218C40C5176366CC009EE3B0 /* CoffeeScript */,
+				218C40C7176366CC009EE3B0 /* JavaScript */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -265,10 +265,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21008BEF1722BF9000941186 /* jquery-2.0.0.min.js in Resources */,
-				212969A8170FDC17006FE094 /* cocoa.coffee in Resources */,
-				21F6B363170EBA2700808B05 /* coffee-script-1.6.2.min.js in Resources */,
+				218C40CF17636713009EE3B0 /* coffee-script-1.6.2.min.js in Resources */,
+				218C40D017636713009EE3B0 /* jquery.min.js in Resources */,
 				21F6B344170EB2CD00808B05 /* InfoPlist.strings in Resources */,
+				218C40CA176366CC009EE3B0 /* cocoa.coffee in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

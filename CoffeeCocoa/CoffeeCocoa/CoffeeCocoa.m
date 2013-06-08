@@ -28,7 +28,7 @@
         [_webView stringByEvaluatingJavaScriptFromString:coffeeScript];
         
         // load jQuery
-        path = [[NSBundle bundleForClass:self.class] pathForResource:@"jquery-2.0.0.min" ofType:@"js"];
+        path = [[NSBundle bundleForClass:self.class] pathForResource:@"jquery.min" ofType:@"js"];
         NSString *jQueryScript = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
         [_webView stringByEvaluatingJavaScriptFromString:jQueryScript];
         
