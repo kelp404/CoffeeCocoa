@@ -23,7 +23,7 @@
         _webView = [WebView new];
         
         // load CoffeeScript
-        NSString *path = [[NSBundle bundleForClass:self.class] pathForResource:@"coffee-script-1.6.2.min" ofType:@"js"];
+        NSString *path = [[NSBundle bundleForClass:self.class] pathForResource:@"coffee-script.min" ofType:@"js"];
         NSString *coffeeScript = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
         [_webView stringByEvaluatingJavaScriptFromString:coffeeScript];
         
