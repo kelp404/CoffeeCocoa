@@ -8,6 +8,10 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface CoffeeCocoaTests : SenTestCase
+@class CoffeeCocoa;
+
+@interface CoffeeCocoaTests : SenTestCase {
+    CoffeeCocoa *_cc;
+}
 
 @end

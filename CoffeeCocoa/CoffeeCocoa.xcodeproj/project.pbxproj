@@ -12,6 +12,7 @@
 		218C40CA176366CC009EE3B0 /* cocoa.coffee in Resources */ = {isa = PBXBuildFile; fileRef = 218C40C6176366CC009EE3B0 /* cocoa.coffee */; };
 		218C40D017636713009EE3B0 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 218C40C9176366CC009EE3B0 /* jquery.min.js */; };
 		218C40D3176367CB009EE3B0 /* coffee-script.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 218C40D1176367BC009EE3B0 /* coffee-script.min.js */; };
+		21B5618F17BA33FB007AB83D /* CocoaInCoffeeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B5618E17BA33FB007AB83D /* CocoaInCoffeeTest.m */; };
 		21F6B328170EB2CD00808B05 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F6B327170EB2CD00808B05 /* Cocoa.framework */; };
 		21F6B332170EB2CD00808B05 /* CoffeeCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F6B331170EB2CD00808B05 /* CoffeeCocoa.m */; };
 		21F6B33A170EB2CD00808B05 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F6B339170EB2CD00808B05 /* SenTestingKit.framework */; };
@@ -39,6 +40,8 @@
 		218C40C6176366CC009EE3B0 /* cocoa.coffee */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cocoa.coffee; sourceTree = "<group>"; };
 		218C40C9176366CC009EE3B0 /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.min.js; sourceTree = "<group>"; };
 		218C40D1176367BC009EE3B0 /* coffee-script.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "coffee-script.min.js"; sourceTree = "<group>"; };
+		21B5618D17BA33FB007AB83D /* CocoaInCoffeeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaInCoffeeTest.h; sourceTree = "<group>"; };
+		21B5618E17BA33FB007AB83D /* CocoaInCoffeeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaInCoffeeTest.m; sourceTree = "<group>"; };
 		21F6B324170EB2CD00808B05 /* libCoffeeCocoa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCoffeeCocoa.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		21F6B327170EB2CD00808B05 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		21F6B32A170EB2CD00808B05 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -161,6 +164,8 @@
 			children = (
 				21F6B345170EB2CD00808B05 /* CoffeeCocoaTests.h */,
 				21F6B346170EB2CD00808B05 /* CoffeeCocoaTests.m */,
+				21B5618D17BA33FB007AB83D /* CocoaInCoffeeTest.h */,
+				21B5618E17BA33FB007AB83D /* CocoaInCoffeeTest.m */,
 				21F6B340170EB2CD00808B05 /* Supporting Files */,
 			);
 			path = CoffeeCocoaTests;
@@ -305,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21F6B347170EB2CD00808B05 /* CoffeeCocoaTests.m in Sources */,
+				21B5618F17BA33FB007AB83D /* CocoaInCoffeeTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
