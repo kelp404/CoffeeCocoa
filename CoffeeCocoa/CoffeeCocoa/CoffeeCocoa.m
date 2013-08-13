@@ -12,8 +12,6 @@
 
 @implementation CoffeeCocoa
 
-@synthesize webView = _webView;
-@synthesize cocoa = _cocoa;
 
 #pragma mark - Init
 - (id)init

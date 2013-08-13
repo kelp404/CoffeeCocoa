@@ -28,10 +28,6 @@ CC_BURST_LINK NSString *jsonFromNSObject(id object);
 
 @implementation CocoaInCoffee
 
-@synthesize webView = _webView;
-@synthesize print = _print;
-@synthesize error = _error;
-
 
 #pragma mark - Init
 - (id)init
