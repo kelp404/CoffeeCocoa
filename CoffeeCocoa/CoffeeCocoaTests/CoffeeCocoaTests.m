@@ -16,7 +16,7 @@
 {
     [super setUp];
     
-    // Set-up code here.
+    _cc = [CoffeeCocoa new];
 }
 
 - (void)tearDown
@@ -28,33 +28,28 @@
 
 - (void)testInit
 {
-    CoffeeCocoa *cc = [CoffeeCocoa new];
-    STAssertNotNil(cc, nil);
+    STAssertNotNil(_cc, nil);
 }
 
 - (void)testCocoaPrint
 {
-    CoffeeCocoa *cc = [CoffeeCocoa new];
-    
     __block BOOL executed = NO;
-    [cc.cocoa setPrint:^(id msg) {
+    [_cc.cocoa setPrint:^(id msg) {
         STAssertEqualObjects(msg, @"cocoa.print()", nil);
         executed = YES;
     }];
-    [cc evalCoffeeScript:@"cocoa.print 'cocoa.print()'"];
+    [_cc evalCoffeeScript:@"cocoa.print 'cocoa.print()'"];
     STAssertTrue(executed, nil);
 }
 
 - (void)testExtendFunction
 {
-    CoffeeCocoa *cc = [CoffeeCocoa new];
-    
     __block BOOL executed = NO;
-    [cc extendFunction:@"extendA" inObject:@"window" handler:^id(id object) {
+    [_cc extendFunction:@"extendA" inObject:@"window" handler:^id(id object) {
         executed = YES;
         return object;
     }];
-    [cc evalCoffeeScript:@"extendA 'extend'" callback:^(id object) {
+    [_cc evalCoffeeScript:@"extendA 'extend'" callback:^(id object) {
         STAssertEqualObjects(object, @"extend", nil);
     }];
     STAssertTrue(executed, nil);
@@ -62,10 +57,8 @@
 
 - (void)testCallback
 {
-    CoffeeCocoa *cc = [CoffeeCocoa new];
-    
     __block BOOL executed = NO;
-    [cc evalCoffeeScript:@"callback true" callback:^(id object) {
+    [_cc evalCoffeeScript:@"callback true" callback:^(id object) {
         executed = YES;
         STAssertEqualObjects(object, @1, nil);
     }];
@@ -74,8 +67,6 @@
 
 - (void)testObjectSend
 {
-    CoffeeCocoa *cc = [CoffeeCocoa new];
-    
     NSDate *date = [NSDate dateWithTimeIntervalSince1970:0];
     NSDictionary *subDict = @{@"title": @"title"};
     NSDictionary *obj = @{@"name": @"Kelp",
@@ -86,11 +77,11 @@
                           @"array": @[@"A", @"B"]};
     
     __block NSUInteger executedTimes = 0;
-    [cc extendFunction:@"get_object" inObject:@"window" handler:^id(id object) {
+    [_cc extendFunction:@"get_object" inObject:@"window" handler:^id(id object) {
         executedTimes++;
         return obj;
     }];
-    [cc evalCoffeeScript:@"func = (obj) ->\n"
+    [_cc evalCoffeeScript:@"func = (obj) ->\n"
      "  callback obj\n"
      "func get_object()"
                 callback:^(id object) {
@@ -102,27 +93,23 @@
 
 - (void)testError
 {
-    CoffeeCocoa *cc = [CoffeeCocoa new];
-    
     __block BOOL executed = NO;
-    [cc.cocoa setError:^(id msg) {
+    [_cc.cocoa setError:^(id msg) {
         executed = YES;
     }];
-    [cc evalCoffeeScript:@"kelp@phate.org()"];
+    [_cc evalCoffeeScript:@"kelp@phate.org()"];
     STAssertTrue(executed, nil);
 }
 
 - (void)testJavaScript
 {
-    CoffeeCocoa *cc = [CoffeeCocoa new];
-    
     __block NSUInteger executedTimes = 0;
-    [cc.cocoa setPrint:^(id msg) {
+    [_cc.cocoa setPrint:^(id msg) {
         executedTimes++;
         STAssertEqualObjects(msg, @"test javascript", nil);
     }];
-    [cc evalJavaScript:@"cocoa.print('test javascript');"];
-    [cc evalJavaScript:@"callback();" callback:^(id object) {
+    [_cc evalJavaScript:@"cocoa.print('test javascript');"];
+    [_cc evalJavaScript:@"callback();" callback:^(id object) {
         executedTimes++;
         STAssertEqualObjects(object, [NSNull null], nil);
     }];
