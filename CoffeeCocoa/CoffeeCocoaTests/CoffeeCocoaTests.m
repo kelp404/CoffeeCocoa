@@ -34,12 +34,14 @@
 - (void)testCocoaPrint
 {
     __block BOOL executed = NO;
+    __block NSString *printMsg;
     [_cc.cocoa setPrint:^(id msg) {
-        STAssertEqualObjects(msg, @"cocoa.print()", nil);
         executed = YES;
+        printMsg = msg;
     }];
     [_cc evalCoffeeScript:@"cocoa.print 'cocoa.print()'"];
     STAssertTrue(executed, nil);
+    STAssertEqualObjects(printMsg, @"cocoa.print()", nil);
 }
 
 - (void)testExtendFunction
@@ -104,11 +106,13 @@
 - (void)testJavaScript
 {
     __block NSUInteger executedTimes = 0;
+    __block NSString *printMsg;
     [_cc.cocoa setPrint:^(id msg) {
         executedTimes++;
-        STAssertEqualObjects(msg, @"test javascript", nil);
+        printMsg = msg;
     }];
     [_cc evalJavaScript:@"cocoa.print('test javascript');"];
+    STAssertEqualObjects(printMsg, @"test javascript", nil);
     [_cc evalJavaScript:@"callback();" callback:^(id object) {
         executedTimes++;
         STAssertEqualObjects(object, [NSNull null], nil);
