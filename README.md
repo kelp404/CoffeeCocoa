@@ -1,4 +1,4 @@
-#CoffeeCocoa
+#CoffeeCocoa [![Build Status](https://secure.travis-ci.org/kelp404/CoffeeCocoa.png?branch=master)](http://travis-ci.org/kelp404/CoffeeCocoa)
 
 Kelp https://twitter.com/kelp404  
 [MIT License][mit]  

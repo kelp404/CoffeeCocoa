@@ -1,0 +1,5 @@
+language: objective-c
+
+script:
+  - xctool/xctool.sh -workspace CoffeeCocoa.xcworkspace -scheme CoffeeCocoa build
+  - xctool/xctool.sh -workspace CoffeeCocoa.xcworkspace -scheme CoffeeCocoa test
