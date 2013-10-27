@@ -122,4 +122,4 @@ NSDictionary *obj = @{@"name": @"Kelp",
 
 
 ##Attention
-Your should copy `/CoffeeCocoa/CoffeeCocoa/CoffeeScript` and `/CoffeeCocoa/CoffeeCocoa/JavaScript` into your bundle.  
+Your should copy `/CoffeeCocoa/CoffeeCocoa/CoffeeCocoa.bundle` into your bundle.  

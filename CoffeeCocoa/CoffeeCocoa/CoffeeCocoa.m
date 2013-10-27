@@ -21,12 +21,12 @@
         _webView = [WebView new];
         
         // load CoffeeScript
-        NSString *path = [[NSBundle bundleForClass:self.class] pathForResource:@"coffee-script.min" ofType:@"js"];
+        NSString *path = [[NSBundle bundleForClass:self.class] pathForResource:@"CoffeeCocoa.bundle/coffee-script.min" ofType:@"js"];
         NSString *coffeeScript = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
         [_webView stringByEvaluatingJavaScriptFromString:coffeeScript];
         
         // load jQuery
-        path = [[NSBundle bundleForClass:self.class] pathForResource:@"jquery.min" ofType:@"js"];
+        path = [[NSBundle bundleForClass:self.class] pathForResource:@"CoffeeCocoa.bundle/jquery.min" ofType:@"js"];
         NSString *jQueryScript = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
         [_webView stringByEvaluatingJavaScriptFromString:jQueryScript];
         
@@ -36,7 +36,7 @@
         [win setValue:_cocoa forKey:@"cocoa_"];
         
         // load cocoa.coffee
-        path = [[NSBundle bundleForClass:self.class] pathForResource:@"cocoa" ofType:@"coffee"];
+        path = [[NSBundle bundleForClass:self.class] pathForResource:@"CoffeeCocoa.bundle/cocoa" ofType:@"coffee"];
         NSString *cocoaScript = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
         [self evalCoffeeScript:cocoaScript];
     }
