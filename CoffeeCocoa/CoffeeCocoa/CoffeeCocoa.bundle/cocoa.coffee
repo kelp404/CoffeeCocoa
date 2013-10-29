@@ -15,11 +15,14 @@ $.extend window.cocoa,
                     return 'array' if source.constructor == Array
                     return 'date' if source.constructor == Date
                     return 'dictionary'
-                else
         'null'
-    _keys_: (source) -> Object.keys(source)
+
+    _keys_: (source) ->
+        Object.keys(source)
+
     _json_parse_: (json) ->
         @_replace_date_ JSON.parse(json)
+
     _replace_date_: (obj) ->
         if (obj)
             if typeof(obj) is 'string'

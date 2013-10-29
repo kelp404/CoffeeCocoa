@@ -11,7 +11,7 @@
 
 #define JSON_DATE_FORMAT @"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
 
-#pragma mark - NyaruDB Base Settings
+
 #if defined (__GNUC__) && (__GNUC__ >= 4)
 #define CC_ATTRIBUTES(attr, ...) __attribute__((attr, ##__VA_ARGS__))
 #else
