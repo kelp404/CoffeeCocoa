@@ -21,6 +21,13 @@
 
 - (void)testInit
 {
+    _cic = [CocoaInCoffee new];
+    STAssertNotNil(_cic, nil);
+    STAssertNotNil(_cic.webView, nil);
+}
+
+- (void)testInitWithWebView
+{
     STAssertNotNil(_cic, nil);
     STAssertEqualObjects(_cic.webView, _webView, nil);
 }

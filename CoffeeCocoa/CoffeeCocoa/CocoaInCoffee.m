@@ -30,19 +30,25 @@ CC_BURST_LINK NSString *jsonFromNSObject(id object);
 
 
 #pragma mark - Init
+- (void)commonInit
+{
+    _handlerIncrement = 0;
+    _handlerPool = [NSMutableDictionary new];
+}
 - (id)init
 {
     self = [super init];
     if (self) {
-        _handlerIncrement = 0;
-        _handlerPool = [NSMutableDictionary new];
+        [self commonInit];
+        _webView = [WebView new];
     }
     return self;
 }
 - (id)initWithWebView:(WebView *)webView
 {
-    self = [self init];
+    self = [super init];
     if (self) {
+        [self commonInit];
         _webView = webView;
     }
     return self;
