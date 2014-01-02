@@ -2,12 +2,19 @@
 //  CoffeeCocoaTests.m
 //  CoffeeCocoaTests
 //
-//  Created by Kelp on 2013/04/05.
+//  Created by Kelp on 2014/01/02.
 //
 //
 
-#import "CoffeeCocoaTests.h"
+#import <XCTest/XCTest.h>
 #import "CoffeeCocoa.h"
+
+@interface CoffeeCocoaTests : XCTestCase {
+    CoffeeCocoa *_cc;
+}
+
+@end
+
 
 
 @implementation CoffeeCocoaTests
@@ -21,14 +28,16 @@
 
 - (void)tearDown
 {
-    // Tear-down code here.
-    
+    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
+
+
 - (void)testInit
 {
-    STAssertNotNil(_cc, nil);
+    XCTAssertNotNil(_cc, @"");
+    XCTAssertNotNil(_cc.webView, @"");
 }
 
 - (void)testCocoaPrint
@@ -40,8 +49,8 @@
         printMsg = msg;
     }];
     [_cc evalCoffeeScript:@"cocoa.print 'cocoa.print()'"];
-    STAssertTrue(executed, nil);
-    STAssertEqualObjects(printMsg, @"cocoa.print()", nil);
+    XCTAssertTrue(executed, @"");
+    XCTAssertEqualObjects(printMsg, @"cocoa.print()", @"");
 }
 
 - (void)testExtendFunction
@@ -52,9 +61,9 @@
         return object;
     }];
     [_cc evalCoffeeScript:@"extendA 'extend'" callback:^(id object) {
-        STAssertEqualObjects(object, @"extend", nil);
+        XCTAssertEqualObjects(object, @"extend", @"");
     }];
-    STAssertTrue(executed, nil);
+    XCTAssertTrue(executed, @"");
 }
 
 - (void)testCallback
@@ -62,9 +71,9 @@
     __block BOOL executed = NO;
     [_cc evalCoffeeScript:@"callback true" callback:^(id object) {
         executed = YES;
-        STAssertEqualObjects(object, @1, nil);
+        XCTAssertEqualObjects(object, @1, @"");
     }];
-    STAssertTrue(executed, nil);
+    XCTAssertTrue(executed, @"");
 }
 
 - (void)testObjectSend
@@ -86,11 +95,11 @@
     [_cc evalCoffeeScript:@"func = (obj) ->\n"
      "  callback obj\n"
      "func get_object()"
-                callback:^(id object) {
-                    executedTimes++;
-                    STAssertEqualObjects(object, obj, nil);
-    }];
-    STAssertEquals(executedTimes, 2UL, nil);
+                 callback:^(id object) {
+                     executedTimes++;
+                     XCTAssertEqualObjects(object, obj, @"");
+                 }];
+    XCTAssertEqual(executedTimes, 2UL, @"");
 }
 
 - (void)testError
@@ -100,7 +109,7 @@
         executed = YES;
     }];
     [_cc evalCoffeeScript:@"kelp@phate.org()"];
-    STAssertTrue(executed, nil);
+    XCTAssertTrue(executed, @"");
 }
 
 - (void)testJavaScript
@@ -112,12 +121,12 @@
         printMsg = msg;
     }];
     [_cc evalJavaScript:@"cocoa.print('test javascript');"];
-    STAssertEqualObjects(printMsg, @"test javascript", nil);
+    XCTAssertEqualObjects(printMsg, @"test javascript", @"");
     [_cc evalJavaScript:@"callback();" callback:^(id object) {
         executedTimes++;
-        STAssertEqualObjects(object, [NSNull null], nil);
+        XCTAssertEqualObjects(object, [NSNull null], @"");
     }];
-    STAssertEquals(executedTimes, 2UL, nil);
+    XCTAssertEqual(executedTimes, 2UL, @"");
 }
 
 @end
