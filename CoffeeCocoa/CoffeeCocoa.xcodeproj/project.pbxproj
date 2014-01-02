@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2114BDAE18751ECD00251B02 /* CocoaInCoffeeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2114BDAD18751ECD00251B02 /* CocoaInCoffeeTests.m */; };
+		2114BDB118751FA400251B02 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2114BDB018751FA400251B02 /* XCTest.framework */; };
 		212969A6170FD2F1006FE094 /* CocoaInCoffee.h in Headers */ = {isa = PBXBuildFile; fileRef = 212969A4170FD2F1006FE094 /* CocoaInCoffee.h */; };
 		212969A7170FD2F1006FE094 /* CocoaInCoffee.m in Sources */ = {isa = PBXBuildFile; fileRef = 212969A5170FD2F1006FE094 /* CocoaInCoffee.m */; };
-		21E68086187509E500BE3FBC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21E6806D1875092900BE3FBC /* XCTest.framework */; };
-		21E6808C187509E500BE3FBC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21E6808A187509E500BE3FBC /* InfoPlist.strings */; };
-		21E6808E187509E500BE3FBC /* CoffeeCocoaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E6808D187509E500BE3FBC /* CoffeeCocoaTests.m */; };
-		21E6809618750A1E00BE3FBC /* CocoaInCoffeeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E6809518750A1E00BE3FBC /* CocoaInCoffeeTests.m */; };
-		21E6809718750C0B00BE3FBC /* libCoffeeCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F6B324170EB2CD00808B05 /* libCoffeeCocoa.a */; };
-		21E6809818750C1100BE3FBC /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F6B350170EB3F300808B05 /* WebKit.framework */; };
-		21E6809918750C1D00BE3FBC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F6B327170EB2CD00808B05 /* Cocoa.framework */; };
-		21E6809A18750FDF00BE3FBC /* CoffeeCocoa.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 213A4066181D2B8C00E92B7C /* CoffeeCocoa.bundle */; };
+		213A4067181D2C6400E92B7C /* CoffeeCocoa.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 213A4066181D2B8C00E92B7C /* CoffeeCocoa.bundle */; };
 		21F6B328170EB2CD00808B05 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F6B327170EB2CD00808B05 /* Cocoa.framework */; };
 		21F6B332170EB2CD00808B05 /* CoffeeCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F6B331170EB2CD00808B05 /* CoffeeCocoa.m */; };
+		21F6B33B170EB2CD00808B05 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F6B327170EB2CD00808B05 /* Cocoa.framework */; };
+		21F6B33E170EB2CD00808B05 /* libCoffeeCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F6B324170EB2CD00808B05 /* libCoffeeCocoa.a */; };
+		21F6B344170EB2CD00808B05 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21F6B342170EB2CD00808B05 /* InfoPlist.strings */; };
+		21F6B347170EB2CD00808B05 /* CoffeeCocoaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F6B346170EB2CD00808B05 /* CoffeeCocoaTests.m */; };
 		21F6B351170EB3F300808B05 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F6B350170EB3F300808B05 /* WebKit.framework */; };
+		21F6B35B170EB8E100808B05 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F6B350170EB3F300808B05 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		21E68090187509E500BE3FBC /* PBXContainerItemProxy */ = {
+		21F6B33C170EB2CD00808B05 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 21F6B31C170EB2CD00808B05 /* Project object */;
 			proxyType = 1;
@@ -33,16 +33,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2114BDAD18751ECD00251B02 /* CocoaInCoffeeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CocoaInCoffeeTests.m; path = CoffeeCocoaTests/CocoaInCoffeeTests.m; sourceTree = SOURCE_ROOT; };
+		2114BDAF18751F1600251B02 /* CoffeeCocoaTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoffeeCocoaTests-Prefix.pch"; sourceTree = "<group>"; };
+		2114BDB018751FA400251B02 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		212969A4170FD2F1006FE094 /* CocoaInCoffee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaInCoffee.h; sourceTree = "<group>"; };
 		212969A5170FD2F1006FE094 /* CocoaInCoffee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaInCoffee.m; sourceTree = "<group>"; };
 		213A4066181D2B8C00E92B7C /* CoffeeCocoa.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CoffeeCocoa.bundle; sourceTree = "<group>"; };
-		21E6806D1875092900BE3FBC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		21E68085187509E500BE3FBC /* CoffeeCocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeCocoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		21E68089187509E500BE3FBC /* CoffeeCocoaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoffeeCocoaTests-Info.plist"; sourceTree = "<group>"; };
-		21E6808B187509E500BE3FBC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		21E6808D187509E500BE3FBC /* CoffeeCocoaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoffeeCocoaTests.m; sourceTree = "<group>"; };
-		21E6808F187509E500BE3FBC /* CoffeeCocoaTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoffeeCocoaTests-Prefix.pch"; sourceTree = "<group>"; };
-		21E6809518750A1E00BE3FBC /* CocoaInCoffeeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaInCoffeeTests.m; sourceTree = "<group>"; };
 		21F6B324170EB2CD00808B05 /* libCoffeeCocoa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCoffeeCocoa.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		21F6B327170EB2CD00808B05 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		21F6B32A170EB2CD00808B05 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -50,22 +46,15 @@
 		21F6B32F170EB2CD00808B05 /* CoffeeCocoa-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoffeeCocoa-Prefix.pch"; sourceTree = "<group>"; };
 		21F6B330170EB2CD00808B05 /* CoffeeCocoa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoffeeCocoa.h; sourceTree = "<group>"; };
 		21F6B331170EB2CD00808B05 /* CoffeeCocoa.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoffeeCocoa.m; sourceTree = "<group>"; };
+		21F6B338170EB2CD00808B05 /* CoffeeCocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeCocoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21F6B339170EB2CD00808B05 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		21F6B341170EB2CD00808B05 /* CoffeeCocoaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoffeeCocoaTests-Info.plist"; sourceTree = "<group>"; };
+		21F6B343170EB2CD00808B05 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		21F6B346170EB2CD00808B05 /* CoffeeCocoaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoffeeCocoaTests.m; sourceTree = "<group>"; };
 		21F6B350170EB3F300808B05 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		21E68082187509E500BE3FBC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				21E6809918750C1D00BE3FBC /* Cocoa.framework in Frameworks */,
-				21E6809818750C1100BE3FBC /* WebKit.framework in Frameworks */,
-				21E6809718750C0B00BE3FBC /* libCoffeeCocoa.a in Frameworks */,
-				21E68086187509E500BE3FBC /* XCTest.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		21F6B321170EB2CD00808B05 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -75,34 +64,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		21F6B334170EB2CD00808B05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2114BDB118751FA400251B02 /* XCTest.framework in Frameworks */,
+				21F6B35B170EB8E100808B05 /* WebKit.framework in Frameworks */,
+				21F6B33B170EB2CD00808B05 /* Cocoa.framework in Frameworks */,
+				21F6B33E170EB2CD00808B05 /* libCoffeeCocoa.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		21E68087187509E500BE3FBC /* CoffeeCocoaTests */ = {
-			isa = PBXGroup;
-			children = (
-				21E6809518750A1E00BE3FBC /* CocoaInCoffeeTests.m */,
-				21E6808D187509E500BE3FBC /* CoffeeCocoaTests.m */,
-				21E68088187509E500BE3FBC /* Supporting Files */,
-			);
-			path = CoffeeCocoaTests;
-			sourceTree = "<group>";
-		};
-		21E68088187509E500BE3FBC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				21E68089187509E500BE3FBC /* CoffeeCocoaTests-Info.plist */,
-				21E6808A187509E500BE3FBC /* InfoPlist.strings */,
-				21E6808F187509E500BE3FBC /* CoffeeCocoaTests-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		21F6B31B170EB2CD00808B05 = {
 			isa = PBXGroup;
 			children = (
 				21F6B32D170EB2CD00808B05 /* CoffeeCocoa */,
-				21E68087187509E500BE3FBC /* CoffeeCocoaTests */,
+				21F6B33F170EB2CD00808B05 /* CoffeeCocoaTests */,
 				21F6B326170EB2CD00808B05 /* Frameworks */,
 				21F6B325170EB2CD00808B05 /* Products */,
 			);
@@ -112,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				21F6B324170EB2CD00808B05 /* libCoffeeCocoa.a */,
-				21E68085187509E500BE3FBC /* CoffeeCocoaTests.xctest */,
+				21F6B338170EB2CD00808B05 /* CoffeeCocoaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,10 +100,10 @@
 		21F6B326170EB2CD00808B05 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2114BDB018751FA400251B02 /* XCTest.framework */,
 				21F6B350170EB3F300808B05 /* WebKit.framework */,
 				21F6B327170EB2CD00808B05 /* Cocoa.framework */,
 				21F6B339170EB2CD00808B05 /* SenTestingKit.framework */,
-				21E6806D1875092900BE3FBC /* XCTest.framework */,
 				21F6B329170EB2CD00808B05 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -159,6 +139,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		21F6B33F170EB2CD00808B05 /* CoffeeCocoaTests */ = {
+			isa = PBXGroup;
+			children = (
+				2114BDAD18751ECD00251B02 /* CocoaInCoffeeTests.m */,
+				21F6B346170EB2CD00808B05 /* CoffeeCocoaTests.m */,
+				21F6B340170EB2CD00808B05 /* Supporting Files */,
+			);
+			path = CoffeeCocoaTests;
+			sourceTree = "<group>";
+		};
+		21F6B340170EB2CD00808B05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2114BDAF18751F1600251B02 /* CoffeeCocoaTests-Prefix.pch */,
+				21F6B341170EB2CD00808B05 /* CoffeeCocoaTests-Info.plist */,
+				21F6B342170EB2CD00808B05 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -173,24 +173,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		21E68084187509E500BE3FBC /* CoffeeCocoaTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 21E68092187509E500BE3FBC /* Build configuration list for PBXNativeTarget "CoffeeCocoaTests" */;
-			buildPhases = (
-				21E68081187509E500BE3FBC /* Sources */,
-				21E68082187509E500BE3FBC /* Frameworks */,
-				21E68083187509E500BE3FBC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				21E68091187509E500BE3FBC /* PBXTargetDependency */,
-			);
-			name = CoffeeCocoaTests;
-			productName = CoffeeCocoaTests;
-			productReference = 21E68085187509E500BE3FBC /* CoffeeCocoaTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		21F6B323170EB2CD00808B05 /* CoffeeCocoa */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21F6B34A170EB2CD00808B05 /* Build configuration list for PBXNativeTarget "CoffeeCocoa" */;
@@ -208,6 +190,24 @@
 			productReference = 21F6B324170EB2CD00808B05 /* libCoffeeCocoa.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		21F6B337170EB2CD00808B05 /* CoffeeCocoaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21F6B34D170EB2CD00808B05 /* Build configuration list for PBXNativeTarget "CoffeeCocoaTests" */;
+			buildPhases = (
+				21F6B333170EB2CD00808B05 /* Sources */,
+				21F6B334170EB2CD00808B05 /* Frameworks */,
+				21F6B335170EB2CD00808B05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21F6B33D170EB2CD00808B05 /* PBXTargetDependency */,
+			);
+			name = CoffeeCocoaTests;
+			productName = CoffeeCocoaTests;
+			productReference = 21F6B338170EB2CD00808B05 /* CoffeeCocoaTests.xctest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -215,11 +215,6 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
-				TargetAttributes = {
-					21E68084187509E500BE3FBC = {
-						TestTargetID = 21F6B323170EB2CD00808B05;
-					};
-				};
 			};
 			buildConfigurationList = 21F6B31F170EB2CD00808B05 /* Build configuration list for PBXProject "CoffeeCocoa" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -234,33 +229,24 @@
 			projectRoot = "";
 			targets = (
 				21F6B323170EB2CD00808B05 /* CoffeeCocoa */,
-				21E68084187509E500BE3FBC /* CoffeeCocoaTests */,
+				21F6B337170EB2CD00808B05 /* CoffeeCocoaTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		21E68083187509E500BE3FBC /* Resources */ = {
+		21F6B335170EB2CD00808B05 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21E6809A18750FDF00BE3FBC /* CoffeeCocoa.bundle in Resources */,
-				21E6808C187509E500BE3FBC /* InfoPlist.strings in Resources */,
+				213A4067181D2C6400E92B7C /* CoffeeCocoa.bundle in Resources */,
+				21F6B344170EB2CD00808B05 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		21E68081187509E500BE3FBC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				21E6809618750A1E00BE3FBC /* CocoaInCoffeeTests.m in Sources */,
-				21E6808E187509E500BE3FBC /* CoffeeCocoaTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		21F6B320170EB2CD00808B05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -270,21 +256,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		21F6B333170EB2CD00808B05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2114BDAE18751ECD00251B02 /* CocoaInCoffeeTests.m in Sources */,
+				21F6B347170EB2CD00808B05 /* CoffeeCocoaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		21E68091187509E500BE3FBC /* PBXTargetDependency */ = {
+		21F6B33D170EB2CD00808B05 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 21F6B323170EB2CD00808B05 /* CoffeeCocoa */;
-			targetProxy = 21E68090187509E500BE3FBC /* PBXContainerItemProxy */;
+			targetProxy = 21F6B33C170EB2CD00808B05 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		21E6808A187509E500BE3FBC /* InfoPlist.strings */ = {
+		21F6B342170EB2CD00808B05 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				21E6808B187509E500BE3FBC /* en */,
+				21F6B343170EB2CD00808B05 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -292,55 +287,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		21E68093187509E500BE3FBC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CoffeeCocoaTests/CoffeeCocoaTests-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = "CoffeeCocoaTests/CoffeeCocoaTests-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		21E68094187509E500BE3FBC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				ENABLE_NS_ASSERTIONS = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CoffeeCocoaTests/CoffeeCocoaTests-Prefix.pch";
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = "CoffeeCocoaTests/CoffeeCocoaTests-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 		21F6B348170EB2CD00808B05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -416,17 +362,35 @@
 			};
 			name = Release;
 		};
+		21F6B34E170EB2CD00808B05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_FRAMEWORKS_DIR)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoffeeCocoaTests/CoffeeCocoaTests-Prefix.pch";
+				INFOPLIST_FILE = "CoffeeCocoaTests/CoffeeCocoaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		21F6B34F170EB2CD00808B05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_FRAMEWORKS_DIR)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoffeeCocoaTests/CoffeeCocoaTests-Prefix.pch";
+				INFOPLIST_FILE = "CoffeeCocoaTests/CoffeeCocoaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		21E68092187509E500BE3FBC /* Build configuration list for PBXNativeTarget "CoffeeCocoaTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				21E68093187509E500BE3FBC /* Debug */,
-				21E68094187509E500BE3FBC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
 		21F6B31F170EB2CD00808B05 /* Build configuration list for PBXProject "CoffeeCocoa" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -441,6 +405,15 @@
 			buildConfigurations = (
 				21F6B34B170EB2CD00808B05 /* Debug */,
 				21F6B34C170EB2CD00808B05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21F6B34D170EB2CD00808B05 /* Build configuration list for PBXNativeTarget "CoffeeCocoaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21F6B34E170EB2CD00808B05 /* Debug */,
+				21F6B34F170EB2CD00808B05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
