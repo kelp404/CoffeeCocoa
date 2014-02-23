@@ -17,8 +17,8 @@ Enjoy It :-)
 
 
 ##Frameworks
-+ CoffeeScript 1.6.3
-+ jQuery 2.0.3
++ CoffeeScript 1.7.1
++ jQuery 2.1.0
 
 
 
